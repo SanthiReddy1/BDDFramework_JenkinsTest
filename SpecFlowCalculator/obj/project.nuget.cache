@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lv6XlCBP/l7H47WY1v1raT0lu91kGDTDvDZO6Hwmu3RL/6j1CMs0pHU1tS48ZpGS6EyQIkCWmsEvnAb9hRYbNw==",
+  "success": true,
+  "projectFilePath": "C:\\BDDFramework\\SpecFlowCalculator\\SpecFlowCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\C278249\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\C278249\\.nuget\\packages\\selenium.webdriver\\4.0.0\\selenium.webdriver.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
