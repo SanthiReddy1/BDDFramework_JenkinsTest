@@ -23,3 +23,22 @@ Scenario: Login with invalid credentials
 	When I click on Sign in
 	Then user should not be logged in with an error message
 
+@DocString
+Scenario: Doc String
+Given I am practicing doc string feature
+"""
+Doc string is used to send more than one line of data to a step definition
+
+"""
+
+@DataTable
+Scenario: Data Table using Dictionary
+Given I am practicing data table feature using Dictionary
+	| Username               | Password    |
+	| nagasanthi11@gmail.com | October2021 |
+	
+@DataTable
+Scenario: Data Table using CreateInstance
+Given I am practicing data table feature using CreateInstance
+	| Username | nagasanthi11@gmail.com |
+	| Password | October2021 |

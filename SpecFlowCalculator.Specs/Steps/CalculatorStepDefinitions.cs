@@ -3,6 +3,7 @@
 namespace SpecFlowCalculator.Specs.Steps
 {
     using System;
+    using System.Collections.Generic;
 
     using NUnit.Framework;
     using OpenQA.Selenium;
@@ -11,23 +12,26 @@ namespace SpecFlowCalculator.Specs.Steps
 
     using SeleniumExtras.WaitHelpers;
 
+    using SpecFlowCalculator.Specs.Utils;
+
+    using TechTalk.SpecFlow.Assist;
+
     [Binding]
     public sealed class CalculatorStepDefinitions
     {
-        private readonly ScenarioContext _scenarioContext;
+        private IWebDriver driver = null;
 
-        private IWebDriver driver;
+        private readonly ScenarioContext scenarioContext;
 
-        public CalculatorStepDefinitions(ScenarioContext scenarioContext)
+        public CalculatorStepDefinitions(IWebDriver driver, ScenarioContext scenarioContext)
         {
-            _scenarioContext = scenarioContext;
+            this.scenarioContext = scenarioContext;
+            this.driver = driver;
         }
 
         [Given(@"I open BrowserStack sign in page")]
         public void GivenIOpenBrowserStackSignInPage()
         {
-            this.driver = new ChromeDriver(@"C:\\SeleniumDrivers");
-            this.driver.Manage().Window.Maximize();
             this.driver.Navigate().GoToUrl("https://www.browserstack.com/users/sign_in");
         }
 
@@ -73,5 +77,39 @@ namespace SpecFlowCalculator.Specs.Steps
             this.driver.Close();
         }
 
+        [Given(@"I am practicing doc string feature")]
+        public void GivenIAmPracticingDocStringFeature(string multilineText)
+        {
+
+        }
+
+        [Given(@"I am practicing data table feature using Dictionary")]
+        public void GivenIAmPracticingDataTableFeatureUsingDictionary(Table table)
+        {
+            var credentials = new Dictionary<string, string>();
+            foreach (var row in table.Rows)
+            {
+                credentials.Add(row[0], row[1]);
+            }
+
+            foreach (var key in credentials.Keys)
+            {
+                var username = key;
+                var pwd = credentials["key"];
+                Console.WriteLine(username + "  " + pwd);
+            }
+        }
+
+
+        [Given(@"I am practicing data table feature using CreateInstance")]
+        public void GivenIAmPracticingDataTableFeatureUsingCreateInstance(Table table)
+        {
+            // Instead of (string username, string pwd), we can create a class with getters and setters for username, pwd
+            //var cred = table.CreateInstance<(string username, string pwd)>(); 
+            var credentials = table.CreateInstance<Credentials>();
+            var username = credentials.Username;
+            var pwd = credentials.Password;
+            Console.WriteLine(username, pwd);
+        }
     }
 }

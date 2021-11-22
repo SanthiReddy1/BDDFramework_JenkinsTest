@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="5e809b9e-4cb0-43c6-830c-051c544819aa" name="C278249@USE2DEVP00496 2021-11-22 12:23:21" runUser="EAD\C278249" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-11-22T12:23:21.6816105+05:30" queuing="2021-11-22T12:23:21.6816105+05:30" start="2021-11-22T12:23:01.4033157+05:30" finish="2021-11-22T12:23:49.6900094+05:30" />
+  <TestSettings name="default" id="350bacfc-3505-47d0-a9a9-9fc643d7c73d">
+    <Deployment runDeploymentRoot="C278249_USE2DEVP00496_2021-11-22_12_23_21" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e473d3b7-5a69-4599-8363-2a2174259520" testId="3126c0fa-8388-9386-4348-7a29ee1a9ad6" testName="Login with invalid credentials" computerName="USE2DEVP00496" duration="00:00:06.2190081" startTime="2021-11-22T12:23:38.6536426+05:30" endTime="2021-11-22T12:23:44.8726507+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e473d3b7-5a69-4599-8363-2a2174259520">
+      <Output>
+        <StdOut>Given I open BrowserStack sign in page&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIOpenBrowserStackSignInPage() (2.7s)&#xD;
+&#xD;
+Given I enter valid email 'nagasanthi11@gmail.com'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidEmail("nagasanthi11@gmai...") (0.2s)&#xD;
+&#xD;
+And I enter invalid password 'October'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterInvalidPassword("October") (0.1s)&#xD;
+&#xD;
+When I click on Sign in&#xD;
+-&gt; done: CalculatorStepDefinitions.WhenIClickOnSignIn() (0.2s)&#xD;
+&#xD;
+Then user should not be logged in with an error message&#xD;
+-&gt; done: CalculatorStepDefinitions.ThenUserShouldNotBeLoggedInWithAnErrorMessage() (0.4s)&#xD;
+&#xD;
+&#xD;
+-&gt; After Feature</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2beca844-5fc1-493b-be44-e19ba061ef63" testId="e38dfe30-9171-b3be-2d71-a5b826547d48" testName="Login within multiple users, nagasanthi11@gmail.com" computerName="USE2DEVP00496" duration="00:00:08.1671454" startTime="2021-11-22T12:23:30.4847850+05:30" endTime="2021-11-22T12:23:38.6519304+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2beca844-5fc1-493b-be44-e19ba061ef63">
+      <Output>
+        <StdOut>Given I open BrowserStack sign in page&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIOpenBrowserStackSignInPage() (2.0s)&#xD;
+&#xD;
+Given I enter valid email 'nagasanthi11@gmail.com'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidEmail("nagasanthi11@gmai...") (0.8s)&#xD;
+&#xD;
+And I enter valid password 'October2021'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidPassword("October2021") (0.1s)&#xD;
+&#xD;
+When I click on Sign in&#xD;
+-&gt; done: CalculatorStepDefinitions.WhenIClickOnSignIn() (0.2s)&#xD;
+&#xD;
+Then I should be logged into BrowserStack page&#xD;
+-&gt; done: CalculatorStepDefinitions.ThenIShouldBeLoggedIntoBrowserStackPage() (2.4s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="485aad29-65f4-48f9-a009-a0dc272c4dc5" testId="9a5f3723-a3e2-02e0-b83f-6bdfb6ebb17d" testName="Login within multiple users, Sravankumar1719@gmail.com" computerName="USE2DEVP00496" duration="00:00:10.3609120" startTime="2021-11-22T12:23:11.2492827+05:30" endTime="2021-11-22T12:23:21.6101947+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="485aad29-65f4-48f9-a009-a0dc272c4dc5">
+      <Output>
+        <StdOut>-&gt; -&gt; Loading plugin C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll&#xD;
+-&gt; -&gt; Missing [assembly:RuntimePlugin] attribute in SpecFlowCalculator.Specs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.&#xD;
+-&gt; -&gt; Loading plugin C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\LivingDoc.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Loading plugin C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecRun.Runtime.SpecFlowPlugin.dll&#xD;
+-&gt; -&gt; Using default config&#xD;
+&#xD;
+&#xD;
+-&gt; Before Feature&#xD;
+&#xD;
+Given I open BrowserStack sign in page&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIOpenBrowserStackSignInPage() (2.4s)&#xD;
+&#xD;
+Given I enter valid email 'Sravankumar1719@gmail.com'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidEmail("Sravankumar1719@g...") (0.4s)&#xD;
+&#xD;
+And I enter valid password 'Sravan@17'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidPassword("Sravan@17") (0.6s)&#xD;
+&#xD;
+When I click on Sign in&#xD;
+-&gt; done: CalculatorStepDefinitions.WhenIClickOnSignIn() (0.2s)&#xD;
+&#xD;
+Then I should be logged into BrowserStack page&#xD;
+-&gt; done: CalculatorStepDefinitions.ThenIShouldBeLoggedIntoBrowserStackPage() (2.8s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1ce59160-ddba-445b-be32-0d6bec6b4c15" testId="6a15054e-7894-fd8e-57f8-882e6c17046f" testName="Login within multiple users, tulasikasarapu001@gmail.com" computerName="USE2DEVP00496" duration="00:00:08.8629536" startTime="2021-11-22T12:23:21.6166954+05:30" endTime="2021-11-22T12:23:30.4796490+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ce59160-ddba-445b-be32-0d6bec6b4c15">
+      <Output>
+        <StdOut>Given I open BrowserStack sign in page&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIOpenBrowserStackSignInPage() (2.3s)&#xD;
+&#xD;
+Given I enter valid email 'tulasikasarapu001@gmail.com'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidEmail("tulasikasarapu001...") (0.8s)&#xD;
+&#xD;
+And I enter valid password 'Sweety@26'&#xD;
+-&gt; done: CalculatorStepDefinitions.GivenIEnterValidPassword("Sweety@26") (0.1s)&#xD;
+&#xD;
+When I click on Sign in&#xD;
+-&gt; done: CalculatorStepDefinitions.WhenIClickOnSignIn() (0.1s)&#xD;
+&#xD;
+Then I should be logged into BrowserStack page&#xD;
+-&gt; done: CalculatorStepDefinitions.ThenIShouldBeLoggedIntoBrowserStackPage() (2.7s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Login with invalid credentials in BrowserStack" storage="c:\bddframework\specflowcalculator.specs\bin\debug\netcoreapp3.1\specflowcalculator.specs.dll" id="3126c0fa-8388-9386-4348-7a29ee1a9ad6">
+      <Execution id="e473d3b7-5a69-4599-8363-2a2174259520" />
+      <TestMethod codeBase="C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll" adapterTypeName="executor://specrun/executorV3.9.7" className="SpecFlowCalculator.Specs.BrowserStack.#()::TestAssembly:SpecFlowCalculator" name="Specs/Feature:BrowserStack/Scenario:Login+with+invalid+credentials" />
+    </UnitTest>
+    <UnitTest name="Login within multiple users, Sravankumar1719@gmail.com in BrowserStack" storage="c:\bddframework\specflowcalculator.specs\bin\debug\netcoreapp3.1\specflowcalculator.specs.dll" id="9a5f3723-a3e2-02e0-b83f-6bdfb6ebb17d">
+      <Execution id="485aad29-65f4-48f9-a009-a0dc272c4dc5" />
+      <TestMethod codeBase="C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll" adapterTypeName="executor://specrun/executorV3.9.7" className="SpecFlowCalculator.Specs.BrowserStack.#()::TestAssembly:SpecFlowCalculator.Specs/Feature:BrowserStack/Scenario:Login+within+multiple+users%2c+Sravankumar1719%40gmail" name="com" />
+    </UnitTest>
+    <UnitTest name="Login within multiple users, tulasikasarapu001@gmail.com in BrowserStack" storage="c:\bddframework\specflowcalculator.specs\bin\debug\netcoreapp3.1\specflowcalculator.specs.dll" id="6a15054e-7894-fd8e-57f8-882e6c17046f">
+      <Execution id="1ce59160-ddba-445b-be32-0d6bec6b4c15" />
+      <TestMethod codeBase="C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll" adapterTypeName="executor://specrun/executorV3.9.7" className="SpecFlowCalculator.Specs.BrowserStack.#()::TestAssembly:SpecFlowCalculator.Specs/Feature:BrowserStack/Scenario:Login+within+multiple+users%2c+tulasikasarapu001%40gmail" name="com" />
+    </UnitTest>
+    <UnitTest name="Login within multiple users, nagasanthi11@gmail.com in BrowserStack" storage="c:\bddframework\specflowcalculator.specs\bin\debug\netcoreapp3.1\specflowcalculator.specs.dll" id="e38dfe30-9171-b3be-2d71-a5b826547d48">
+      <Execution id="2beca844-5fc1-493b-be44-e19ba061ef63" />
+      <TestMethod codeBase="C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll" adapterTypeName="executor://specrun/executorV3.9.7" className="SpecFlowCalculator.Specs.BrowserStack.#()::TestAssembly:SpecFlowCalculator.Specs/Feature:BrowserStack/Scenario:Login+within+multiple+users%2c+nagasanthi11%40gmail" name="com" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="3126c0fa-8388-9386-4348-7a29ee1a9ad6" executionId="e473d3b7-5a69-4599-8363-2a2174259520" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e38dfe30-9171-b3be-2d71-a5b826547d48" executionId="2beca844-5fc1-493b-be44-e19ba061ef63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a5f3723-a3e2-02e0-b83f-6bdfb6ebb17d" executionId="485aad29-65f4-48f9-a009-a0dc272c4dc5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a15054e-7894-fd8e-57f8-882e6c17046f" executionId="1ce59160-ddba-445b-be32-0d6bec6b4c15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>SpecFlow+Runner execution started&#xD;
+SpecFlow+Runner 3.9.7 in Framework netcore31 in x64 mode execution started&#xD;
+TestAdapter Location: C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\TechTalk.SpecRun.VisualStudio.TestAdapter.dll&#xD;
+Current UserName: 'C278249', MachineName: 'USE2DEVP00496'&#xD;
+SpecRun: running tests in C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll&#xD;
+Output folder configured to "C:\BDDFramework\TestResults" (default)&#xD;
+Profile: &#xD;
+Log file path: C:\BDDFramework\TestResults\Unnamed project__2021-11-22T122306.log&#xD;
+Checking activation&#xD;
+Activation check completed&#xD;
+Starting test run&#xD;
+Discovering target: Default&#xD;
+Discovering tests from assembly: C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll&#xD;
+Discovered tests from assembly: C:\BDDFramework\SpecFlowCalculator.Specs\bin\Debug\netcoreapp3.1\SpecFlowCalculator.Specs.dll&#xD;
+Scenario: Login within multiple users, Sravankumar1719@gmail.com in BrowserStack -&gt; Succeeded on thread #0&#xD;
+Scenario: Login within multiple users, tulasikasarapu001@gmail.com in BrowserStack -&gt; Succeeded on thread #0&#xD;
+Scenario: Login within multiple users, nagasanthi11@gmail.com in BrowserStack -&gt; Succeeded on thread #0&#xD;
+Scenario: Login with invalid credentials in BrowserStack -&gt; Succeeded on thread #0&#xD;
+test run finished&#xD;
+publishing test results&#xD;
+Not publishing results.&#xD;
+test results published&#xD;
+generating reports&#xD;
+Starting external report generation process&#xD;
+Successfully generated reports.&#xD;
+Successfully generated reports&#xD;
+Result: all tests passed&#xD;
+  Total: 4&#xD;
+  Succeeded: 4&#xD;
+  Ignored: 0&#xD;
+  Pending: 0&#xD;
+  Skipped: 0&#xD;
+  Failed: 0&#xD;
+&#xD;
+  Execution Time: 00:00:37.0988244&#xD;
+Report file: file:///C:/BDDFramework/TestResults/Unnamed%20project__2021-11-22T122306.html&#xD;
+Adding attachments to VSTest&#xD;
+adding Test Execution Report 'C:\BDDFramework\TestResults\Unnamed project__2021-11-22T122306.html'&#xD;
+Log file: file:///C:/BDDFramework/TestResults/Unnamed%20project__2021-11-22T122306.log&#xD;
+SpecFlow+Runner execution finished&#xD;
+</StdOut>
+    </Output>
+    <ResultFiles>
+      <ResultFile path="USE2DEVP00496\Unnamed project__2021-11-22T122306.log" />
+      <ResultFile path="USE2DEVP00496\Unnamed project__2021-11-22T122306.html" />
+    </ResultFiles>
+  </ResultSummary>
+</TestRun>
